@@ -1,0 +1,23 @@
+defaults:
+  ignore_users:
+    - app-user
+    - fake-bot
+
+digests:
+  - digest: nvim-3days.html
+    title: Nvim-related news
+    since: 3 day
+    items:
+      - https://github.com/nvim-treesitter/nvim-treesitter/
+      - https://github.com/nvim-tree/nvim-tree.lua
+
+  - digest: python-3days.html
+    title: Python-related news
+    since: 3 day
+    items:
+      - https://github.com/pola-rs/polars
+      - search: >-
+          repo:yt-dlp/yt-dlp
+          NOT extractor in:title
+          -label:"site-request"
+        title: yt-dlp/yt-dlp
