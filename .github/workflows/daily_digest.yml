@@ -4,6 +4,8 @@ name: "Daily activity digests"
 
 on:
   push:
+    branches:
+      - "main"
   schedule:
     # every day at 6am SGT (10pm UTC)
     - cron: "0 22 * * *"
