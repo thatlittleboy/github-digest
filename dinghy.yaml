@@ -25,6 +25,7 @@ digests:
     since: 1 day
     items:
       - https://github.com/pola-rs/polars
+      - https://github.com/charliermarsh/ruff
       - search: >-
           repo:yt-dlp/yt-dlp
           NOT extractor in:title
@@ -36,6 +37,7 @@ digests:
     since: 3 day
     items:
       - https://github.com/pola-rs/polars
+      - https://github.com/charliermarsh/ruff
       - search: >-
           repo:yt-dlp/yt-dlp
           NOT extractor in:title
