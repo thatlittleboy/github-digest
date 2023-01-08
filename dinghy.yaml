@@ -4,14 +4,34 @@ defaults:
     - fake-bot
 
 digests:
-  - digest: nvim-3days.html
+  # ----- Neovim -----
+  - digest: digests/nvim-1day.html
+    title: Nvim-related news
+    since: 1 day
+    items:
+      - https://github.com/nvim-treesitter/nvim-treesitter/
+      - https://github.com/nvim-tree/nvim-tree.lua
+
+  - digest: digests/nvim-3days.html
     title: Nvim-related news
     since: 3 day
     items:
       - https://github.com/nvim-treesitter/nvim-treesitter/
       - https://github.com/nvim-tree/nvim-tree.lua
 
-  - digest: python-3days.html
+  # ----- Python -----
+  - digest: digests/python-1day.html
+    title: Python-related news
+    since: 1 day
+    items:
+      - https://github.com/pola-rs/polars
+      - search: >-
+          repo:yt-dlp/yt-dlp
+          NOT extractor in:title
+          -label:"site-request"
+        title: yt-dlp/yt-dlp
+
+  - digest: digests/python-3days.html
     title: Python-related news
     since: 3 day
     items:

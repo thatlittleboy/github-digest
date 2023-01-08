@@ -46,6 +46,7 @@ jobs:
           # A personal access token with public_repo permission.
           GITHUB_TOKEN: ${{ secrets.DINGHY_ACCESS_TOKEN }}
         run: |
+          mkdir -p digests/
           python -m dinghy
       - name: "Setup Pages"
         uses: actions/configure-pages@v1
