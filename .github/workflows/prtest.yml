@@ -39,5 +39,5 @@ jobs:
           # A personal access token with public_repo permission.
           GITHUB_TOKEN: ${{ secrets.DINGHY_ACCESS_TOKEN }}
         run: |
-          python -m pip install git+https://github.com/nedbat/dinghy@main
+          python -m pip install --use-pep517 git+https://github.com/nedbat/dinghy@main
           echo "DONE without errors"
