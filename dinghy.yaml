@@ -2,6 +2,7 @@ defaults:
   ignore_users:
     - app-user
     - fake-bot
+  template: "templates/custom-tpl.html.j2"
 
 digests:
   # ----- Neovim -----
