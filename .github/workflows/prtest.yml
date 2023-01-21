@@ -1,0 +1,43 @@
+# This GitHub Action creates the dinghy digest and publishes them every day.
+
+name: "Testing github actions"
+
+on: [push]
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  digest:
+    name: "Daily digest"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Check out the repo"
+        uses: actions/checkout@v3
+
+      - name: "Install Python"
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+          check-latest: false
+
+      - name: "Install dinghy"
+        run: |
+          python -m pip install git+ssh://git@github.com/nedbat/dinghy@main
+          echo "DONE without errors"
+        # env:
+        #   # A personal access token with public_repo permission.
+        #   GITHUB_TOKEN: ${{ secrets.DINGHY_ACCESS_TOKEN }}
