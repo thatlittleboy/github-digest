@@ -30,8 +30,3 @@ digests:
           NOT extractor in:title
           -label:"site-request"
         title: yt-dlp/yt-dlp
-
-  - digest: digests/python-3days.html
-    title: Python-related news
-    since: 3 day
-    items: *python-items
