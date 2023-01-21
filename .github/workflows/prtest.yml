@@ -35,9 +35,9 @@ jobs:
           check-latest: false
 
       - name: "Install dinghy"
+        env:
+          # A personal access token with public_repo permission.
+          GITHUB_TOKEN: ${{ secrets.DINGHY_ACCESS_TOKEN }}
         run: |
-          python -m pip install git+ssh://git@github.com/nedbat/dinghy@main
+          python -m pip install git+https://github.com/nedbat/dinghy@main
           echo "DONE without errors"
-        # env:
-        #   # A personal access token with public_repo permission.
-        #   GITHUB_TOKEN: ${{ secrets.DINGHY_ACCESS_TOKEN }}
