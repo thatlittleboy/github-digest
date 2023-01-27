@@ -30,3 +30,14 @@ digests:
           NOT extractor in:title
           -label:"site-request"
         title: yt-dlp/yt-dlp
+
+  # ----- Mkdocs -----
+  - digest: digests/mkdocs-1day.html
+    title: Mkdocs-related news
+    since: 1 day
+    items: &mkdocs-items
+      - https://github.com/mkdocstrings/mkdocstrings
+      - https://github.com/mkdocstrings/python
+      - https://github.com/mkdocstrings/griffe
+      - https://github.com/facelessuser/pymdown-extensions
+      - https://github.com/squidfunk/mkdocs-material
