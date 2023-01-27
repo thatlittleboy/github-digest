@@ -11,6 +11,7 @@ repos:
       - id: check-merge-conflict
       - id: end-of-file-fixer
       - id: trailing-whitespace
+        args: ["--markdown-linebreak-ext=md"]
       - id: check-yaml
 
   - repo: https://github.com/pre-commit/mirrors-prettier
