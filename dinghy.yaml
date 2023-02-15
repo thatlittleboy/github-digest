@@ -23,8 +23,8 @@ digests:
     title: Python-related news
     since: 1 day
     items: &python-items
-      - https://github.com/pola-rs/polars
       - https://github.com/charliermarsh/ruff
+      - https://github.com/sanic-org/sanic
       - search: >-
           repo:yt-dlp/yt-dlp
           NOT extractor in:title
