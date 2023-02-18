@@ -29,6 +29,7 @@ digests:
           repo:yt-dlp/yt-dlp
           NOT extractor in:title
           -label:"site-request"
+          -label:"spam"
         title: yt-dlp/yt-dlp
 
   # ----- Mkdocs -----
