@@ -25,11 +25,13 @@ digests:
     since: 1 day
     items: &python-items
       - https://github.com/charliermarsh/ruff
+      - https://github.com/charliermarsh/ruff-lsp
       - https://github.com/sanic-org/sanic
       - search: >-
           repo:yt-dlp/yt-dlp
           NOT extractor in:title
           -label:"site-request"
+          -label:"site-bug"
           -label:"spam"
         title: yt-dlp/yt-dlp
 
