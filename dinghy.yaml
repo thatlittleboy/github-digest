@@ -12,7 +12,6 @@ digests:
     items: &nvim-items
       - https://github.com/nvim-treesitter/nvim-treesitter
       - https://github.com/nvim-tree/nvim-tree.lua
-      - https://github.com/jose-elias-alvarez/null-ls.nvim
 
   - digest: digests/nvim-3days.html
     title: Nvim-related news
